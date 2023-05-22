@@ -35,11 +35,18 @@
 .card {
     margin-left: 300px;
     border: none;
+    background-color: #ededed;
 }
 .thead-light{
-    background-color: #ededed;
+    background-color: #c5c5c5;
+}
+tbody tr{
+    background-color: #fff;
 }
 a{
     text-decoration: none;
+}
+h4{
+    color: #41B883;
 }
 </style>

@@ -100,17 +100,21 @@ export default {
 .card {
     margin-left: 300px;
     border: none;
-}
-
-.thead-light {
     background-color: #ededed;
 }
-
+.thead-light {
+    background-color: #c5c5c5;
+}
+tbody tr{
+    background-color: #fff;
+}
+h4{
+    color: #41B883;
+}
 a {
     text-decoration: none;
     margin-right: 10px;
 }
-
 button {
     border: none;
     background-color: transparent;

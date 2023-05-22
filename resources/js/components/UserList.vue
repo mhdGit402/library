@@ -50,8 +50,6 @@ export default {
 .card {
     margin-left: 300px;
     border: none;
-}
-.thead-light{
     background-color: #ededed;
 }
 a{
@@ -62,5 +60,14 @@ button {
     border:none;
     color: #0d6efd;
     background-color: transparent;
+}
+h4{
+    color:#41B883;
+}
+tbody tr{
+    background-color: #fff;;
+}
+.thead-light{
+    background-color: #c5c5c5 !important;
 }
 </style>

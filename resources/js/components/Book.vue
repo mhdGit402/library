@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ item.title }}</h5>
                     <p>Author: {{ item.author }}</p>
-                    <p><span>Category: <a :href="`/category/${item.category.id}`">{{ item.category.title }}</a></span></p>
+                    <p><span>Category: <a id="categoryLink" :href="`/category/${item.category.id}`">{{ item.category.title }}</a></span></p>
                     <p class="card-text">Publisher: {{ item.publisher }}</p>
                     <p class="card-text">{{ item.description }}</p>
 
@@ -99,9 +99,10 @@ a {
     margin-top: 20px;
     margin-left: 5px;
     text-decoration: none;
-    color: #000;
 }
-
+#categoryLink{
+    color:#000;
+}
 h5 {
     margin-bottom: 15px;
 }
@@ -117,4 +118,8 @@ button {
 
 .savedBook {
     cursor: default;
-}</style>
+}
+.card-body{
+    padding-right: inherit;
+}
+</style>

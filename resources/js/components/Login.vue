@@ -15,7 +15,7 @@
 
 
             <div class="input-group mb-3">
-                <button type="submit" class="btn btn-outline-primary">Log in</button>
+                <button type="submit" class="btn btn-outline-primary mt-3" style="width:150px;">Log in</button>
             </div>
 
             <div v-show="errors.length != 0">
@@ -99,8 +99,14 @@ export default {
 .card {
     margin-left: 300px;
     border: none;
+    background-color: #ededed;
 }
-
+input {
+    height:50px;
+}
+h4{
+    color: #41B883;
+}
 form {
     width: 50% !important;
 }

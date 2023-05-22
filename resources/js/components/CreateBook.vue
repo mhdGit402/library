@@ -45,7 +45,7 @@
                 </li>
                 <li>
                     <div class="input-group mb-3">
-                        <textarea v-model="description" class="form-control" aria-label="With textarea"
+                        <textarea v-model="description" rows="6" class="form-control" aria-label="With textarea"
                             placeholder="Book Description"></textarea>
                     </div>
                 </li>
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                     <div class="input-group mb-3">
-                        <input @change="imageFile" class="form-control" type="file">
+                        <input style="height:38px !important" @change="imageFile" class="form-control" type="file">
                     </div>
                 </li>
                 <li v-if="imageFile_validate">
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                     <div class="input-group mb-3">
-                        <button type="submit" class="btn btn-outline-primary">Add Book</button>
+                        <button type="submit" class="btn btn-outline-primary mt-3" style="width: 150px;">Add Book</button>
                     </div>
                 </li>
                 <li v-if="error.length != 0">
@@ -161,34 +161,6 @@ export default {
                 .catch(err => console.log(err));
 
             }
-
-
-            // if(this.title.length == 0) {
-            //     this.title_validate = true;
-            // }else if(this.title.length != 0){
-            //     this.title_validate = false;
-            // } if(this.category_id == 0){
-            //     this.category_id_validate = true;
-            // }else if(this.category_id != 0){
-            //     this.category_id_validate = false;
-            // }if(this.author.length == 0) {
-            //     this.author_validate = true;
-            // }else if(this.author.length != 0){
-            //     this.author_validate = false;
-            // } if(this.publisher.length == 0) {
-            //     this.publisher_validate = true;
-            // }else if(this.publisher.length != 0){
-            //     this.publisher_validate = false;
-            // } if(this.description.length == 0) {
-            //     this.description_validate = true;
-            // }else if(this.description.length != 0){
-            //     this.description_validate = false;
-            // } if(this.imageLength === undefined){
-            //     this.imageFile_validate = true;
-            // } else if(this.imageLength != undefined){
-            //     this.imageFile_validate = false;
-            // } else{
-
         }
     }
 }
@@ -196,6 +168,7 @@ export default {
 
 <style scoped>
 .card {
+    background-color: #ededed;
     margin-left: 300px;
     border: none;
 }
@@ -210,5 +183,11 @@ li {
 
 .validate {
     color: red;
+}
+input{
+    height:50px;
+}
+h4{
+    color: #41B883;
 }
 </style>

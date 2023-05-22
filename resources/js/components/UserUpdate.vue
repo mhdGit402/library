@@ -13,7 +13,7 @@
             </div>
 
             <div class="input-group mb-3">
-                <button type="submit" class="btn btn-outline-primary">Update</button>
+                <button type="submit" class="btn btn-outline-primary mt-3" style="width:150px;">Update</button>
             </div>
 
             <div v-if="errors.length != 0">
@@ -76,12 +76,19 @@ export default {
 .card {
     margin-left: 300px;
     border: none;
+    background-color: #ededed;
 }
 
 form {
     width: 50% !important;
 }
+input{
+    height:50px;
+}
 .red {
     color:red;
+}
+h4{
+    color: #41B883;
 }
 </style>

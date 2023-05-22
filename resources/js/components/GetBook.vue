@@ -49,7 +49,7 @@
                             <input class="form-control" disabled id="startTime" type="text" :value="startTime">
                             <h6><label class="mt-4" for="dueTime">Due Time:</label></h6>
                             <input class="form-control" disabled id="dueTime" type="text" :value="dueTime">
-                            <button  type="submit" class="btn btn-outline-success">Get Book</button>
+                            <button  type="submit" class="btn btn-outline-success mt-4" style="width:150px;">Get Book</button>
                     </form>
                 </div>
             </li>
@@ -135,4 +135,9 @@ button {
 
 .savedBook {
     cursor: default;
-}</style>
+}
+.card-body{
+    margin-top:30px;
+    padding-right: inherit;
+} 
+</style>

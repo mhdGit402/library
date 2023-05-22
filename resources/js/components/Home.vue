@@ -1,9 +1,11 @@
 <template>
-    <bookCard v-for="item in data" :key="item.id" :id="item.id" :title="item.title" :author="item.author"
-        :description="item.description" :publisher="item.publisher" :img="item.img" :relation="item.category"
-        :saved_books_id="this.saved_books_id" :guest="guest" 
-        :get_books_id="this.get_books_id">
-    </bookCard>
+    <div class="main">
+        <bookCard v-for="item in data" :key="item.id" :id="item.id" :title="item.title" :author="item.author"
+            :description="item.description" :publisher="item.publisher" :img="item.img" :relation="item.category"
+            :saved_books_id="this.saved_books_id" :guest="guest" 
+            :get_books_id="this.get_books_id">
+        </bookCard>
+    </div>
 </template>
 
 <script>
@@ -47,3 +49,9 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.main{
+    margin-top:35px;
+}
+</style>

@@ -72,8 +72,11 @@
 .card {
     margin-left: 300px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
-
+h4{
+    color: #41B883;
+}
 ul {
     display: flex;
 }
@@ -85,7 +88,7 @@ li {
 
 a {
     margin-top: 20px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     text-decoration: none;
     color: #000;
 }

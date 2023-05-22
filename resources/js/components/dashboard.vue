@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <h4>Dashboard</h4>
+        <!-- <h4>Dashboard</h4> -->
     </div>
 </template>
 
@@ -12,6 +12,7 @@
 
 <style scoped>
 .card{
+    background-color: #ededed;
     margin-left:300px;
     border:none;
 }

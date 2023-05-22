@@ -4,31 +4,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './bootstrap';
 import { createApp } from 'vue';
 
-
-const header = createApp({});
-const sidebar = createApp({});
-const footer = createApp({});
-const app = createApp({});
-
-const book = createApp({});
-const createBook = createApp({});
-
-const category = createApp({});
-const create_category = createApp({});
-
-const register = createApp({});
-const login = createApp({});
-const getBook = createApp({});
-const mybook = createApp({});
-const savedbook = createApp({});
-const dashboard = createApp({});
-const userlist = createApp({});
-const booklist = createApp({});
-const user = createApp({});
-const userupdate = createApp({});
-const search = createApp({});
-
-
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
 import Footer from './components/Footer.vue'
@@ -49,42 +24,78 @@ import User from './components/User.vue'
 import UserUpdate from './components/UserUpdate.vue'
 import Search from './components/Search.vue'
 
-header.component('header-component', Header);
-sidebar.component('sidebar-component', Sidebar);
-footer.component('footer-component', Footer);
-app.component('home-component', Home);
-book.component('book-component', Book);
-createBook.component('createbook-component', CreateBook);
-category.component('category-component', Category);
-create_category.component('add_category-component', CreateCategory);
-register.component('register-component', Register);
-login.component('login-component', Login);
-getBook.component('getbook-component', GetBook);
-mybook.component('mybook-component', MyBook);
-savedbook.component('savedbook-component', SavedBook);
-dashboard.component('dashboard-component', Dashboard);
-userlist.component('userlist-component', UserList);
-booklist.component('booklist-component', BookList);
-user.component('user-component', User);
-userupdate.component('userupdate-component', UserUpdate);
-search.component('search-component', Search);
+createApp({})
+    .component('header-component', Header)
+    .mount('#header')
 
-header.mount('#header');
-sidebar.mount('#sidebar');
-footer.mount('#footer');
-app.mount('#app');
-book.mount('#book');
-createBook.mount('#createBook');
-category.mount('#category');
-create_category.mount('#add_category');
-register.mount('#register');
-login.mount('#login');
-getBook.mount('#getBook');
-mybook.mount('#myBook');
-savedbook.mount('#savedBooks');
-dashboard.mount('#dashboard');
-userlist.mount('#userList');
-booklist.mount('#bookList');
-user.mount('#user');
-userupdate.mount('#userUpdate');
-search.mount('#search');
+createApp({})
+    .component('sidebar-component', Sidebar)
+    .mount('#sidebar')
+
+createApp({})
+    .component('footer-component', Footer)
+    .mount('#footer')
+
+createApp({})
+    .component('home-component', Home)
+    .mount('#app')
+
+createApp({})
+    .component('book-component', Book)
+    .mount('#book')
+
+createApp({})
+    .component('createbook-component', CreateBook)
+    .mount('#createBook')
+
+createApp({})
+    .component('category-component', Category)
+    .mount('#category')
+
+createApp({})
+    .component('add_category-component', CreateCategory)
+    .mount('#add_category')
+
+createApp({})
+    .component('register-component', Register)
+    .mount('#register')
+
+createApp({})
+    .component('login-component', Login)
+    .mount('#login')
+
+createApp({})
+    .component('getbook-component', GetBook)
+    .mount('#getBook')
+
+createApp({})
+    .component('mybook-component', MyBook)
+    .mount('#myBook')
+
+createApp({})
+    .component('savedbook-component', SavedBook)
+    .mount('#savedBooks')
+
+createApp({})
+    .component('dashboard-component', Dashboard)
+    .mount('#dashboard')
+
+createApp({})
+    .component('userlist-component', UserList)
+    .mount('#userList')
+
+createApp({})
+    .component('booklist-component', BookList)
+    .mount('#bookList')
+
+createApp({})
+    .component('user-component', User)
+    .mount('#user')
+
+createApp({})
+    .component('userupdate-component', UserUpdate)
+    .mount('#userUpdate')
+
+createApp({})
+    .component('search-component', Search)
+    .mount('#search')

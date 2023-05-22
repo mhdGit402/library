@@ -1,11 +1,9 @@
 <template>
     <nav id="sidebar">
         <div style="display:flex" class="sidebar-header">
-            <h3>Library</h3>
-            <img style="margin-left:10px;margin-top:5px" width="32" height="32" src="/image/book.png">
+            <a href="/"><h2>Library</h2></a>
+            <img style="margin-left:10px;margin-top:7px" width="32" height="32" src="/image/book.png">
         </div>
-
-        <h4 style="margin-left:20px;margin-top:20px;" v-if="url == 'dashboard'">Dashboard</h4>
 
         <ul class="list-unstyled components">
             <!-- <li>
@@ -126,8 +124,20 @@ button:hover {
     background: #fff;
 }
 
+#categoryTitle {
+    font-size:15px;
+}
+#categoryTitle li {
+    padding-left: 20px;
+}
+
 #categoryTitle li a{
     font-size: 1em !important;
+}
+
+#categoryTitle li:hover{
+    background-color: #41B883;
+    color: #fff;
 }
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -188,8 +198,8 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #ededed;
-    color: #000;
+    background: #34495E;
+    color: #fff;
     transition: all 0.3s;
 }
 
@@ -198,8 +208,8 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #ededed;
+    padding: 40px;
+    background: #34495E;
 }
 
 /* #sidebar ul.components {
@@ -218,13 +228,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    background: #fff;
+    background: #41B883;
+    color:#fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #41B883;
 }
 
 a[data-toggle="collapse"] {

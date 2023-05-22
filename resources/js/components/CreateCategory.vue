@@ -14,7 +14,7 @@
                 </li>
                  <li>
                     <div class="input-group mb-3">
-                        <button type="submit" class="btn btn-outline-primary">Add Category</button>
+                        <button type="submit" class="btn btn-outline-primary mt-3" style="width:150px;">Add Category</button>
                     </div>
                 </li>
             </ul>
@@ -61,6 +61,7 @@ export default {
 .card {
     margin-left: 300px;
     border: none;
+    background-color: #ededed;
 }
 
 form {
@@ -68,5 +69,11 @@ form {
 }
 li{
     list-style: none;
+}
+h4{
+    color: #41B883;
+}
+input{
+    height:50px;
 }
 </style>

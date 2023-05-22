@@ -1,5 +1,5 @@
 <template>
-    <div class="card" style="width: 30rem;">
+    <div class="card">
         <ul>
             <li style="margin-top:15px;">
                 <img width="150" height="190" :src="`/image/books/${img}`" alt="...">
@@ -17,7 +17,7 @@
                     </p>
 
                     <p>
-                        <span>Category: <a :href="`/category/${relation.id}`">{{ relation.title }}</a></span>
+                        <span>Category: <a id="categoryLink" :href="`/category/${relation.id}`">{{ relation.title }}</a></span>
                     </p>
 
                     <p class="card-text">{{ description }}</p>
@@ -103,7 +103,6 @@ a {
     margin-top:20px;
     margin-left: 5px;
     text-decoration: none;
-    color:#000;
 }
 h5{
     margin-bottom: 15px;
@@ -117,5 +116,9 @@ button{
 }
 .savedBook{
     cursor: default;
+}
+#categoryLink{
+    color:#000;
+    margin-left:0px !important;
 }
 </style>

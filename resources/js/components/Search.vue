@@ -50,3 +50,9 @@ import bookCard from './bookCard.vue';
         }
     }
 </script>
+
+<style scoped>
+h4{
+    color: #41B883;
+}
+</style>
