@@ -47,6 +47,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function role(){
+        return $this->belongsTo(Role::class, 'role_id');
+    }
+
     public function libraries(){
         return $this->belongsToMany(Library::class, 'saved_books', 'user_id', 'library_id')->withPivot('id');
     }

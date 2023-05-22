@@ -46,7 +46,7 @@ class UserController extends Controller
     }
 
     public function showUser($id, User $user){
-        $user = $user->where('id', $id)->with('libraries.category', 'getLibraries.category')->get();
+        $user = $user->where('id', $id)->with('libraries.category', 'getLibraries.category', 'role')->get();
         return view('user', ['data' => $user]);
     }
 }

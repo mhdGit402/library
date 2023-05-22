@@ -14,7 +14,7 @@
                 <tr>
                     <td scope="row"><a :href="`/dashboard/user/${item.id}`">{{ item.name }}</a></td>
                     <td>{{item.email}}</td>
-                    <td>{{item.role_id}}</td>
+                    <td>{{item.role.role_title}}</td>
                     <td><button @click="deleteUser(item.id)">Delete</button><a :href="`/dashboard/user/${item.id}/update`">Update</a></td>
                 </tr>
             </tbody>

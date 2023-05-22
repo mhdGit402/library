@@ -13,7 +13,7 @@ class DashboardController extends Controller
     }
 
     public function userList(User $user){
-        $data = $user->where('role_id', '=', '3')->get();
+        $data = $user->with('role')->where('role_id', '=', '3')->get();
         return view('user_list', ['data' => $data]);
     }
 
